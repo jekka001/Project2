@@ -13,6 +13,7 @@ public class UserDAO extends AbstractDAO<User> {
     private static final String SQL_FIND_ALL = "SELECT * FROM user";
     private static final String SQL_UPDATE = "UPDATE user SET email = ?, password = ?, name = ?, " +
             "surname = ?, role = ? WHERE id = ?";
+    private static final String SQL_UPDATE_SALT = "UPDATE user SET salt = ? WHERE id = ?";
     private static final String SQL_DELETE = "DELETE FROM user WHERE id = ?";
 
     public UserDAO(Connection connection) {
@@ -129,6 +130,39 @@ public class UserDAO extends AbstractDAO<User> {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public boolean updateSalt(int salt, long clientId){
+        try(PreparedStatement preparedStatement = connection.prepareStatement(SQL_UPDATE_SALT)) {
+            preparedStatement.setInt(1, salt);
+            preparedStatement.setLong(2, clientId);
+
+            preparedStatement.execute();
+
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+    public int findSalt(long clientId){
+        String currentSql = getSelectQuery("id");
+
+        try(PreparedStatement preparedStatement = connection.prepareStatement(currentSql)) {
+            preparedStatement.setLong(1, clientId);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            return parseSetWithSalt(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+    private int parseSetWithSalt(ResultSet resultSet) throws SQLException{
+        resultSet.next();
+
+        return resultSet.getInt("salt");
     }
 
     private List<User> parseSet(ResultSet resultSet) throws SQLException {
