@@ -165,6 +165,7 @@ public class UserDAO extends AbstractDAO<User> {
         return resultSet.getInt("salt");
     }
 
+
     private List<User> parseSet(ResultSet resultSet) throws SQLException {
         List<User> userList = new ArrayList<>();
 
