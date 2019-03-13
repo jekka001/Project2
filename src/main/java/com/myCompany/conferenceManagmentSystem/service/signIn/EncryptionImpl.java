@@ -5,7 +5,7 @@ import org.jasypt.util.password.BasicPasswordEncryptor;
 import java.security.SecureRandom;
 
 public class EncryptionImpl implements Encryption {
-    private static EncryptionImpl instance = new EncryptionImpl();
+    public static EncryptionImpl instance = new EncryptionImpl();
     private SecureRandom secureRandom = new SecureRandom();
     private BasicPasswordEncryptor basicPasswordEncryptor = new BasicPasswordEncryptor();
 
