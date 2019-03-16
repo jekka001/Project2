@@ -14,7 +14,7 @@ public abstract class DAOFactory {
     public abstract ReviewDAO createReview(Connection connection);
     public abstract SpeakerDAO createSpeaker(Connection connection);
     public abstract UserDAO createUser(Connection connection);
-    public abstract SpeakingDAO createSpeakingDAO(Connection connection);
+    public abstract SpeakingDAO createSpeaking(Connection connection);
 
     public static DAOFactory getInstance(){
         if(isNullDaoFactory(daoFactory)){

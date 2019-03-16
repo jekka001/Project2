@@ -25,7 +25,7 @@ public class MySqlDAOFactory extends DAOFactory {
     }
 
     @Override
-    public SpeakingDAO createSpeakingDAO(Connection connection) {
+    public SpeakingDAO createSpeaking(Connection connection) {
         return new SpeakingDAO(connection);
     }
 
