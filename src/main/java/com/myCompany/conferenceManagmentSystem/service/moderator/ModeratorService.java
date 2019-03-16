@@ -1,14 +1,16 @@
 package com.myCompany.conferenceManagmentSystem.service.moderator;
 
 
-import java.time.Instant;
+import com.myCompany.conferenceManagmentSystem.model.entity.Review;
+import com.myCompany.conferenceManagmentSystem.model.entity.Speaking;
+
 
 public interface ModeratorService {
-    void setReviewTopic(String topic);
-    void suggestReviewTopic(String topic);
-    void changeReviewTopic(String topic);
+    void fixReviewTopic(Review review);
+    void suggestReviewTopic(Review review);
+    void changeReviewTopic(Review review);
 
 
-    void changeTimeConduction(Instant instant);
-    void changeVenue(String venue);
+    void changeTimeConduction(Speaking speaking);
+    void changeVenue(Speaking speaking);
 }
