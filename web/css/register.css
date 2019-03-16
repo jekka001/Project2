@@ -1,0 +1,76 @@
+.fond{
+    margin:0;
+    background: linear-gradient(rgb(213,227,246), rgb(224,234,252));
+}
+.form_menu{
+    position: absolute;
+    background: rgb(66,83,181);
+    width: 100%;
+}
+.field_menu{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.field_menu{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.form_language{
+    position:relative;
+    margin-left: 80%;
+    width:20%;
+    margin-bottom: 20%;
+    padding-bottom: 1px;
+}
+.field_language{
+    border:none;
+    background: rgb(66,83,181);
+    color:white;
+    float:right;
+}
+.form_register{
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    background: rgb(39,51,124);
+    margin:0% 35% 0 35%;
+    padding-bottom: 2%;
+    width:30%;
+    text-align: center;
+    font-size: 20px;
+}
+.info_register{
+    border-radius: 20px 20px 0px 0px;
+    font-family: sans-serif;
+    display: block;
+    padding: 3% 5% 2% 10%;
+    background:rgb(66,83,181);
+    color:	white;
+}
+.wrong_register{
+    font-family: sans-serif;
+    color:orange;
+}
+.field_register{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin:5% 20%;
+    display: block;
+    text-align: center;
+}
+.register_user{
+    background-color: rgb(254,193,7);
+    border: none;
+    color:rgb(39,51,124);
+    border-radius: 5px;
+    font-size: 25px;
+    margin-top:2%;
+}
