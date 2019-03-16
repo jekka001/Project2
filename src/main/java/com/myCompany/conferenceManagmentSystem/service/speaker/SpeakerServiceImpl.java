@@ -1,16 +1,12 @@
 package com.myCompany.conferenceManagmentSystem.service.speaker;
 
 import com.myCompany.conferenceManagmentSystem.model.entity.Review;
+import com.myCompany.conferenceManagmentSystem.service.moderator.ModeratorServiceImpl;
 
 public class SpeakerServiceImpl implements SpeakerService {
-    private Review review;
-
-    public SpeakerServiceImpl(Review review) {
-        this.review = review;
-    }
 
     @Override
-    public void suggestReviewTopic(String topic) {
-        //
+    public void suggestReviewTopic(Review review) {
+        ModeratorServiceImpl.reviewConsidered.add(review);
     }
 }

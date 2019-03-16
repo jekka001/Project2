@@ -1,5 +1,7 @@
 package com.myCompany.conferenceManagmentSystem.service.speaker;
 
+import com.myCompany.conferenceManagmentSystem.model.entity.Review;
+
 public interface SpeakerService {
-    void suggestReviewTopic(String topic);
+    void suggestReviewTopic(Review review);
 }
