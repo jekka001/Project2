@@ -5,12 +5,12 @@
          version="4.0">
 
 
-    <welcome-file-list>
-        <welcome-file>/WEB-INF/view/tableConference.jsp</welcome-file>
+    <!--<welcome-file-list>
+        <welcome-file>UserLanguage</welcome-file>
     </welcome-file-list>
-
+-->
     <session-config>
-        <session-timeout>30</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
     </session-config>
 
 </web-app>

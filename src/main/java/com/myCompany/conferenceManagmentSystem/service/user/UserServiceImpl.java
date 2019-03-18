@@ -5,8 +5,8 @@ import com.myCompany.conferenceManagmentSystem.dao.connection.ConnectionPoolHold
 import com.myCompany.conferenceManagmentSystem.dao.factory.impl.MySqlDAOFactory;
 import com.myCompany.conferenceManagmentSystem.dao.impl.AbstractDAO;
 import com.myCompany.conferenceManagmentSystem.dao.impl.UserDAO;
-import com.myCompany.conferenceManagmentSystem.model.entity.Role;
-import com.myCompany.conferenceManagmentSystem.model.entity.User;
+import com.myCompany.conferenceManagmentSystem.model.Role;
+import com.myCompany.conferenceManagmentSystem.model.User;
 import com.myCompany.conferenceManagmentSystem.service.signIn.Encryption;
 import com.myCompany.conferenceManagmentSystem.service.signIn.EncryptionImpl;
 
@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService {
         salt = encryption.generationSalt();
         int idUser = findNumberOfUsers();
         String encryptedPassword = protectPassword(password);
-        user = new User(idUser, name, surname, email, encryptedPassword, Role.User);
+        user = new User(idUser, email, encryptedPassword, name, surname, Role.User);
         insertDataInBD();
     }
     private int findNumberOfUsers(){
@@ -90,4 +90,5 @@ public class UserServiceImpl implements UserService {
             e.printStackTrace();
         }
     }
+
 }

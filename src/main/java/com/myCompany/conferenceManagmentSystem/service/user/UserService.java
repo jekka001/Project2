@@ -1,6 +1,6 @@
 package com.myCompany.conferenceManagmentSystem.service.user;
 
-import com.myCompany.conferenceManagmentSystem.model.entity.User;
+import com.myCompany.conferenceManagmentSystem.model.User;
 
 public interface UserService {
     User getUser(String login, String password);

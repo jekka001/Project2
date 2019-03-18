@@ -59,9 +59,10 @@ public class ConnectionPoolHolder {
 
     public Connection getConnection() {
         try {
-            return getInstance().getDataSource().getConnection();
+            return getDataSource().getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
+
 }

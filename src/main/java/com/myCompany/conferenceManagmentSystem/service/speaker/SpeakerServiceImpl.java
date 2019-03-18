@@ -1,6 +1,6 @@
 package com.myCompany.conferenceManagmentSystem.service.speaker;
 
-import com.myCompany.conferenceManagmentSystem.model.entity.Review;
+import com.myCompany.conferenceManagmentSystem.model.Review;
 import com.myCompany.conferenceManagmentSystem.service.moderator.ModeratorServiceImpl;
 
 public class SpeakerServiceImpl implements SpeakerService {

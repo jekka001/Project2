@@ -1,6 +1,6 @@
 package com.myCompany.conferenceManagmentSystem.dao.impl;
 
-import com.myCompany.conferenceManagmentSystem.model.entity.Review;
+import com.myCompany.conferenceManagmentSystem.model.Review;
 
 import java.sql.*;
 import java.util.ArrayList;
