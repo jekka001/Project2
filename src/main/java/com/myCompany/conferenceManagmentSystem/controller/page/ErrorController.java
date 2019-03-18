@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet({"/news", "/news/*"})
-public class NewsController extends AbstractController {
+@WebServlet("/error")
+public class ErrorController extends AbstractController {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        forwardToPage("news.jsp", req, resp);
+    protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+        forwardToPage("error.jsp", httpServletRequest, httpServletResponse);
     }
 }
