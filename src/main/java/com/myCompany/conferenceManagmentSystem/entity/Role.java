@@ -1,4 +1,4 @@
-package com.myCompany.conferenceManagmentSystem.model;
+package com.myCompany.conferenceManagmentSystem.entity;
 
 public enum Role {
     Admin,

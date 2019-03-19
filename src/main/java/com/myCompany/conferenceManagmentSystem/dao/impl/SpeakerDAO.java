@@ -2,8 +2,8 @@ package com.myCompany.conferenceManagmentSystem.dao.impl;
 
 import com.myCompany.conferenceManagmentSystem.dao.factory.DAOFactory;
 import com.myCompany.conferenceManagmentSystem.dao.factory.impl.MySqlDAOFactory;
-import com.myCompany.conferenceManagmentSystem.model.Review;
-import com.myCompany.conferenceManagmentSystem.model.Speaker;
+import com.myCompany.conferenceManagmentSystem.entity.Review;
+import com.myCompany.conferenceManagmentSystem.entity.Speaker;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -5,8 +5,8 @@ import com.myCompany.conferenceManagmentSystem.dao.connection.ConnectionPoolHold
 import com.myCompany.conferenceManagmentSystem.dao.factory.impl.MySqlDAOFactory;
 import com.myCompany.conferenceManagmentSystem.dao.impl.AbstractDAO;
 import com.myCompany.conferenceManagmentSystem.dao.impl.UserDAO;
-import com.myCompany.conferenceManagmentSystem.model.Role;
-import com.myCompany.conferenceManagmentSystem.model.User;
+import com.myCompany.conferenceManagmentSystem.entity.Role;
+import com.myCompany.conferenceManagmentSystem.entity.User;
 import com.myCompany.conferenceManagmentSystem.service.signIn.Encryption;
 import com.myCompany.conferenceManagmentSystem.service.signIn.EncryptionImpl;
 

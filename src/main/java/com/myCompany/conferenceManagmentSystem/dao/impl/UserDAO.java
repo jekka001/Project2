@@ -1,7 +1,7 @@
 package com.myCompany.conferenceManagmentSystem.dao.impl;
 
-import com.myCompany.conferenceManagmentSystem.model.Role;
-import com.myCompany.conferenceManagmentSystem.model.User;
+import com.myCompany.conferenceManagmentSystem.entity.Role;
+import com.myCompany.conferenceManagmentSystem.entity.User;
 
 import java.sql.*;
 import java.util.ArrayList;

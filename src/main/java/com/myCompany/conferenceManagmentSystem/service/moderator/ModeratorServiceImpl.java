@@ -5,8 +5,8 @@ package com.myCompany.conferenceManagmentSystem.service.moderator;
 import com.myCompany.conferenceManagmentSystem.dao.connection.ConnectionPoolHolder;
 import com.myCompany.conferenceManagmentSystem.dao.factory.impl.MySqlDAOFactory;
 import com.myCompany.conferenceManagmentSystem.dao.impl.AbstractDAO;
-import com.myCompany.conferenceManagmentSystem.model.Review;
-import com.myCompany.conferenceManagmentSystem.model.Speaking;
+import com.myCompany.conferenceManagmentSystem.entity.Review;
+import com.myCompany.conferenceManagmentSystem.entity.Speaking;
 
 import java.sql.Connection;
 import java.util.ArrayList;

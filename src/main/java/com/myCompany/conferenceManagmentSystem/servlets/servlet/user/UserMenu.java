@@ -1,6 +1,6 @@
 package com.myCompany.conferenceManagmentSystem.servlets.servlet.user;
 
-import com.myCompany.conferenceManagmentSystem.model.User;
+import com.myCompany.conferenceManagmentSystem.entity.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

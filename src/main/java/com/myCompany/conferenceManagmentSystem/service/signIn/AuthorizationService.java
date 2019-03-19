@@ -1,6 +1,6 @@
 package com.myCompany.conferenceManagmentSystem.service.signIn;
 
-import com.myCompany.conferenceManagmentSystem.model.User;
+import com.myCompany.conferenceManagmentSystem.entity.User;
 import com.myCompany.conferenceManagmentSystem.service.language.ResourceManager;
 import com.myCompany.conferenceManagmentSystem.service.user.UserService;
 import com.myCompany.conferenceManagmentSystem.service.user.UserServiceImpl;
